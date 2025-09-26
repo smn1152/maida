@@ -1,0 +1,59 @@
+# Django and core
+django>=5.0,<6.0
+django-environ
+django-model-utils
+django-allauth[mfa]
+django-crispy-forms
+crispy-bootstrap5
+django-redis
+django-extensions
+django-debug-toolbar
+
+# Database - using binary for easier setup
+psycopg-binary>=3.2,<4.0
+# Alternative: use SQLite for development
+# No additional packages needed for SQLite
+
+# API
+djangorestframework
+django-cors-headers
+drf-spectacular
+
+# Task Queue
+celery[redis]
+django-celery-beat
+django-celery-results
+flower
+
+# Storage and Files
+pillow
+python-magic
+whitenoise
+
+# Testing
+pytest
+pytest-django
+pytest-cov
+factory-boy
+faker
+
+# Code Quality
+ruff
+mypy
+django-stubs[compatible-mypy]
+djangorestframework-stubs[compatible-mypy]
+
+# Security
+django-csp
+django-permissions-policy
+
+# Utilities
+python-slugify
+pytz
+requests
+httpx
+
+# Production/Deployment
+gunicorn
+uvicorn[standard]
+uvloop

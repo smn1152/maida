@@ -1,0 +1,50 @@
+# Core Django
+django>=5.0,<6.0
+django-environ
+django-model-utils
+
+# Authentication
+django-allauth[mfa]
+argon2-cffi
+
+# Forms
+django-crispy-forms
+crispy-bootstrap5
+
+# API
+djangorestframework
+django-cors-headers
+
+# Database
+# psycopg-binary  # Uncomment when ready for PostgreSQL
+
+# Cache & Sessions
+django-redis
+
+# Task Queue
+celery[redis]
+django-celery-beat
+django-celery-results
+
+# Development
+django-debug-toolbar
+django-extensions
+
+# Files & Images
+pillow
+whitenoise
+
+# Testing
+pytest
+pytest-django
+factory-boy
+faker
+
+# Code Quality
+ruff
+mypy
+django-stubs[compatible-mypy]
+
+# Production
+gunicorn
+uvicorn[standard]

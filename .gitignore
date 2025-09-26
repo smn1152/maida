@@ -1,0 +1,68 @@
+# ---- macOS / IDE ----
+.DS_Store
+.idea/
+.vscode/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.cache/
+
+# ---- Virtualenv ----
+.venv/
+venv/
+venv.*/
+ENV/
+env/
+
+# ---- Env & secrets ----
+.env
+.env.*
+*.env
+
+# ---- Django/Wagtail ----
+# پایگاه‌داده‌های محلی و بکاپ‌ها
+*.sqlite3
+*.sqlite3.*
+/maida_vale/db.sqlite3
+/maida_vale/db.sqlite3.*
+/maida_vale/db.sqlite3.backup_*
+# رسانه‌ها و استاتیک جمع‌آوری‌شده محلی
+/maida_vale/media/
+/maida_vale/staticfiles/
+# لاگ‌ها
+*.log
+/maida_vale/logs/
+
+# ---- Build/Dist ----
+build/
+dist/
+*.lock-windows
+
+# ---- Node (اگر بعداً اضافه شد) ----
+node_modules/
+npm-debug.log*
+yarn.lock
+
+# ---- Docker/Compose خروجی‌های موقت ----
+*.pid
+*.seed
+
+# ---- سایر فایل‌های پروژه فعلی ----
+/maida_vale/diagnostic_*.log
+/maida_vale/salbion_*.log
+/maida_vale/structure_analysis_*.json
+/maida_vale/validation_report_*.json
+
+# اجازه بده فایل‌های تنظیمات نسخه‌کنترل شوند اما رازها نه
+# اگر فایل local.py داری و شامل رمزهاست، یا پاک‌سازی‌اش کن یا Ignore کن:
+# /maida_vale/config/settings/local.py
